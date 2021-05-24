@@ -5,7 +5,8 @@ The idea for this project is to be able to start front-end, back-end, and databa
 ## Getting Started
 
 - Install MongoDB
-  - Record `install dir` and `data dir`
+  - Keep track of your `install dir` and `data dir`
+  - Adjust `package.json` according to your `install dir` and `data dir`
 - Run `npm install`
 - Run `npm run dev`
 

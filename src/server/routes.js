@@ -3,10 +3,10 @@
  * and the code for re-routing to production domain.
  */
 
-module.exports = function(app, dbs, express, path, fs) {
+module.exports = function(app, dbs) {
 
-	app.get('/api/getAllPosts', (req, res) => {
-		dbs.siteData.collection('blog_posts').find({})
+	app.get('/api/getData', (req, res) => {
+		dbs.siteData.collection('sample-store').find({})
 			.toArray( (err, docs) => {
 				if (err) {
 					console.log(err);
