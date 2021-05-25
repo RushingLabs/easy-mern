@@ -16,36 +16,14 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run start\" \"npm run db\"",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\" \"npm run db\"",
     "server": "cd src\\server && nodemon server.js",
-    "client": "cd src && npm start",
-    "db": "cd %npm_package_config_mongodir% && .\\mongod --dbpath %npm_package_config_mongodatadir%",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "cd src\\client && npm start",
+    "db": "cd %npm_package_config_mongodir% && .\\mongod --dbpath %npm_package_config_mongodatadir%"
   },
   "config": {
     "mongodir": "C:\\Program Files\\MongoDB\\Server\\4.4\\bin",
     "mongodatadir": "C:\\mongo-data"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "concurrently": "^6.1.0",
