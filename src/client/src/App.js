@@ -26,9 +26,6 @@ function App() {
 
       <button onClick={() => callServer()}>Click Me</button>
 
-      {/* <ul>
-        <li>test data goes here</li>
-      </ul> */}
     </div>
   );
 }

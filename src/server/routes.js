@@ -1,8 +1,3 @@
-/**
- * NOTES: Copy/paste from 'thekove-cra' project, but removed the sitemap
- * and the code for re-routing to production domain.
- */
-
 module.exports = function(app, dbs) {
 
 	app.get('/api/getData', (req, res) => {
